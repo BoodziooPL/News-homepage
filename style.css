@@ -20,7 +20,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  overflow: hidden;
 }
 @media screen and (max-width: 376px) {
   header {
@@ -89,6 +88,7 @@
   }
   main {
     width: 90%;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -105,5 +105,88 @@
   main p {
     font-size: 15px;
     padding-top: 10px;
+  }
+  main button {
+    background-color: var(--SoftRed);
+    width: 60%;
+    height: 12%;
+    margin-top: 10px;
+    color: var(--Off-white);
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+  }
+  aside {
+    width: 90%;
+    height: 70vh;
+    background-color: var(--VeryDarkBlue);
+    margin: 0px 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  aside h2 {
+    color: var(--SoftOrange);
+    margin: 20px 20px;
+    font-size: 34px;
+  }
+  aside article {
+    margin: 15px 20px;
+  }
+
+  aside article:nth-child(-n + 3)::after {
+    display: block;
+    content: '';
+    background: var(--DarkGrayishBlue);
+    height: 1px;
+    margin-top: 30px;
+  }
+  aside article h3 {
+    color: var(--Off-white);
+    font-weight: 700;
+  }
+  aside article p {
+    color: var(--GrayishBlue);
+  }
+  section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 5%;
+  }
+  section article {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+  }
+  .imageSection img {
+    width: 125px;
+  }
+  .articleWord {
+    margin-left: 15px;
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .articleWord h4 {
+    color: var(--GrayishBlue);
+    font-size: 32px;
+  }
+  .articleWord h5 {
+    color: var(--VeryDarkBlue);
+    font-size: 21px;
+    font-weight: 700;
+  }
+  .articleWord p {
+    color: var(--DarkGrayishBlue);
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .attribution {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
   }
 }
