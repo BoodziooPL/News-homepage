@@ -31,6 +31,7 @@
   }
   .header {
     width: 50%;
+    overflow: hidden;
   }
   .logo {
     margin-left: 10px;
@@ -44,11 +45,19 @@
     height: 100vh;
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 30%;
+    visibility: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: var(--Off-white);
+    transition: 1s;
+    top: -200%;
+  }
+  .active {
+    visibility: visible;
+    top: 0;
+    display: flex;
   }
   nav ul {
     display: flex;
