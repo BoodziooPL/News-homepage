@@ -238,6 +238,10 @@
     list-style: none;
     padding: 20px;
     font-size: 24px;
+    cursor: pointer;
+  }
+  nav ul a:hover {
+    color: var(--SoftOrange);
   }
   .mainBgc {
     width: 100%;
@@ -252,29 +256,81 @@
   aside {
     background-color: var(--VeryDarkBlue);
     width: 100%;
-    height: 100%;
+    height: 90%;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  aside h2 {
+    color: var(--SoftOrange);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 30px 30px;
+  }
+  aside article h3 {
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--GrayishBlue);
+  }
+  aside article h3:hover {
+    color: var(--SoftOrange);
+  }
+  aside article {
+    color: var(--DarkGrayishBlue);
+    width: 80%;
+    margin: auto;
   }
   section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 5;
   }
+  section h4 {
+    color: var(--GrayishBlue);
+    font-size: 32px;
+  }
   section article {
     display: flex;
+    width: 100% /3;
   }
-  section article img {
+  section article h5 {
+    color: var(--VeryDarkBlue);
+    font-size: 18px;
+    cursor: pointer;
+  }
+  section article h5:hover {
+    color: var(--SoftRed);
+  }
+  section article .articleWord {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+  }
+  section article .imageSection {
+    width: 40%;
+    height: 100%;
+  }
+  .imageSection img {
     width: 100%;
     height: 100%;
   }
+  section p {
+    font-size: 15px;
+  }
+
   main {
     grid-column-start: 2;
     grid-column-end: 3;
