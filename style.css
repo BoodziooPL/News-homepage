@@ -68,16 +68,16 @@
     flex-direction: column;
     justify-content: center;
   }
-  nav ul a {
+  nav ul li a {
     text-decoration: none;
-    padding-top: 30px;
     font-size: 30px;
-    font-weight: 400;
+    color: var(--VeryDarkBlue);
   }
   nav ul li {
     list-style: none;
     color: var(--VeryDarkBlue);
     font-weight: 700;
+    padding-top: 30px;
   }
   nav .menuClose {
     margin-top: 15px;
@@ -231,11 +231,13 @@
   nav ul {
     display: flex;
   }
+  nav ul li {
+    list-style: none;
+  }
   nav ul a {
     display: flex;
     color: var(--DarkGrayishBlue);
     text-decoration: none;
-    list-style: none;
     padding: 20px;
     font-size: 24px;
     cursor: pointer;
